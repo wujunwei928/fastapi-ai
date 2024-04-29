@@ -7,7 +7,8 @@ class OpenAiWhisperModelSize(Enum):
     BASE = "base"
     SMALL = "small"
     MEDIUM = "medium"
-    LARGE = "large"
+    LARGE = "large"  # 目前是 LARGE_V3:
+    LARGE_V1 = "large-v1"
     LARGE_V2 = "large-v2"
     LARGE_V3 = "large-v3"
 
