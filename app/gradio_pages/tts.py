@@ -38,7 +38,12 @@ class TTS(GradioPageBase):
             )
             with gr.Row():
                 input_text = gr.TextArea(label="配音文本")
-                output_audio = gr.Audio(label="配音结果")
+                output_audio = gr.Audio(
+                    label="配音结果",
+                    format="mp3",
+                    show_share_button=True,
+                    show_download_button=True,
+                )
             submit_button = gr.Button("提交")
             submit_button.click(
                 fn=self._tts,

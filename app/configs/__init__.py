@@ -1,5 +1,7 @@
 from enum import Enum
 
+DATABASE_URL = "sqlite+aiosqlite:///./fastapi_ai.db"
+
 
 class OpenAiWhisperModelSize(Enum):
     # Multilingual models
